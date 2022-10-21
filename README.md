@@ -11,5 +11,15 @@ This is a simple calculator focusing on commonplace algebric operations. It's bu
 - Division (/)
 - Modulo (%)
 - Exponentation (**)
+- and others...
 
-Use it wisely!
+## Installation and setup
+
+Open a Git terminal and paste:
+
+```git 
+git clone https://github.com/Petrosdevri/Calculator.git
+```
+You will get the repository files. To use them open up a code editor and run the program. It will open up a browser window where you can access the calculator. 
+
+## Enjoy and use it wisely!
