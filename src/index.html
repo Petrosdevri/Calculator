@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form name="calc">
+        <input class="screen" id="screen" name="screen" placeholder="0" disabled />
+        <div class="table">
+          <table>
+            <tr>
+              <td><input id="clear" type="button" onclick="calc.screen.value = '0'" value="C" /></td>
+              <td><input id="back" type="button" onclick="calc.screen.value = calc.screen.value.slice(0,calc.screen.value.length-1)" value="&lt;"/></td>
+              <td><input id="left-par" type="button" onclick="calc.screen.value +='('" value="("/></td>
+              <td><input id="right-par" type="button" onclick="calc.screen.value += ')'" value=")"/></td>
+            </tr>
+            <tr>
+              <td><input id="power" type="button" onclick="calc.screen.value**=2" value="x^2" /></td>
+              <td><input id="sq" type="button" onclick="calc.screen.value = Math.sqrt(calc.screen.value)" value="√"/></td>
+              <td><input id="power3" type="button" onclick="calc.screen.value **= 3" value="x^3"/></td>
+              <td><input id="modulo" type="button" onclick="calc.screen.value += '%'" value="%"/></td>
+            </tr>
+            <tr>
+              <td><input id="seven" type="button" onclick="calc.screen.value += '7'" value="7" /></td>
+              <td><input id="eight" type="button" onclick="calc.screen.value += '8'" value="8" /></td>
+              <td><input id="nine" type="button" onclick="calc.screen.value += '9'" value="9" /></td>
+              <td><input id="division" type="button" onclick="calc.screen.value += '/'" value="/"/></td>
+            </tr>
+            <tr>
+              <td><input id="four" type="button" onclick="calc.screen.value += '4'" value="4" /></td>
+              <td><input id="five" type="button" onclick="calc.screen.value += '5'" value="5"></td>
+              <td><input id="six" type="button" onclick="calc.screen.value += '6'" value="6"></td>
+              <td><input id="multiplication" onclick="calc.screen.value += '*'" type="button" value="*"/></td>
+            </tr>
+            <tr>
+              <td><input id="one" type="button" onclick="calc.screen.value += '1'" value="1"></td>
+              <td><input id="two" type="button" onclick="calc.screen.value += '2'" value="2" /></td>
+              <td><input id= "three" type="button" onclick="calc.screen.value += '3'" value="3"></td>
+              <td><input id="subtraction" type="button" onclick="calc.screen.value += '-'" value="-"></td>
+            </tr>
+            <tr>
+              <td><input id="zero" type="button" onclick="calc.screen.value += '0'" value="0" /></td>
+              <td><input id="point" type="button" onclick="calc.screen.value += '.'" value="." /></td>
+              <td><input id="equals" type="button" onclick="calc.screen.value = eval(calc.screen.value)" value="=" /></td>
+              <td><input id="addition" type="button" onclick="calc.screen.value += '+'" value="+"/></td>
+            </tr>
+          </table>
+        </div>
+      </form>
+      <div id="copyright">&copy; Petros Devrikis</div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
