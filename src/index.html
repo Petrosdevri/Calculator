@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-      <form name="calc">
+      <form name="calc" id="form">
         <input class="screen" id="screen" name="screen" placeholder="0" disabled />
         <div class="table">
           <table>
@@ -52,6 +52,12 @@
       </form>
       <div id="copyright">&copy; Petros Devrikis</div>
     </div>
-    <script src="src/index.js"></script>
+    <script>
+      const screen = document.getElementById('screen');
+      const clear = document.getElementById('clear');
+      if(screen.value == "0") {
+        clear.disabled = false;
+      } 
+    </script>
   </body>
 </html>
