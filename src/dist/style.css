@@ -12,6 +12,14 @@ body .container {
   margin-bottom: 10%;
   background-color: #5c5859;
 }
+@media (max-width: 768px) {
+  body .container {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 body .container #form .screen {
   width: 390px;
   height: 50px;
